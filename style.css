@@ -25,6 +25,11 @@ nav {
     width: 100%;
     background-color: #FF6767;
     height: 10vh;
+}
+
+nav a {text-decoration: none; font-family: Garet;}
+
+.center{
     display: flex;
     align-items: center;
     justify-content: center;
