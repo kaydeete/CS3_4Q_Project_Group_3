@@ -15,32 +15,36 @@
                         <h1>ANIMAL ABUSE</h1>
                     </div>
                 </div>
-                <a href="profile.html">Profile</a>
             </nav>
 
             <h2 class="motto">Lend a <span id="spanmotto">Paw</span>, Stop the <span id="spanmotto">Claw</span></h2>
             <h3 id="legend">SIGN <span id="h3up">-UP</span> HERE!</h3>
 
-            <form id="signupform" onsubmit="return submission();">
-                <input type="text" id="fname" name="fname" placeholder="First Name" required>
-                <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+            <main class="background">
+                <form id="signupform" onsubmit="return submission();">
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+                        
+                    <label>Sex</label><br>
+                    <label class="radio-label"><input type="radio" id="male" name="sex" value="Male" required>Male</label><br>
+                    <label class="radio-label"><input type="radio" id="female" name="sex" value="Female" required> Female</label><br>
+                    <label class="radio-label"><input type="radio" id="na" name="sex" value="Prefer not to say" required> Prefer not to say</label><br><br>
+                        
+                    <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+                        
+                    <input type="password" id="password" name="password" placeholder="Password" required><br>
+                        
+                    <input type="number" id="contactnum" name="contactnum" placeholder="Contact Number"><br>
                     
-                <label>Sex</label><br>
-                <label class="radio-label"><input type="radio" id="male" name="sex" value="Male" required>Male</label><br>
-                <label class="radio-label"><input type="radio" id="female" name="sex" value="Female" required> Female</label><br>
-                <label class="radio-label"><input type="radio" id="na" name="sex" value="Prefer not to say" required> Prefer not to say</label><br><br>
+                    <label for="reason">Why I support this campaign?</label></br>
+                    <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
                     
-                <input type="email" id="email" name="email" placeholder="Email Address" required><br>
-                    
-                <input type="password" id="password" name="password" placeholder="Password" required><br>
-                    
-                <input type="number" id="contactnum" name="contactnum" placeholder="Contact Number"><br>
-                
-                <label for="reason">Why I support this campaign?</label></br>
-                <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
-                
-                <input type="submit" value="Sign Up">
-            </form>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <aside id="picbg"> <!--picture beside the text-->
+                    <img src="images/image.png" alt="" height="250" style="max-width:100%;height:auto;">
+                </aside>
+            </main>
         </div>
         <script src="script.js"></script>
     </body>

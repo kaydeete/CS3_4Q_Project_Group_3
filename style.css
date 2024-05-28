@@ -19,7 +19,7 @@ body {
 
 .navheader {font-family: "Fredoka", sans-serif;}
 
-.logo{height: 5vh;}
+.logo{height: 3vh;}
 
 nav {
     width: 100%;
@@ -27,12 +27,16 @@ nav {
     height: 10vh;
 }
 
-nav a {text-decoration: none; font-family: Garet;}
-
 .center{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Garet;
+    color: black;
 }
 
 .motto{font-family: "Shrikhand", serif; color: #FF6767; text-align: center;}
@@ -51,3 +55,14 @@ input[type=text], input[type=password], input[type=email], input[type=password],
 }
 
 ::placeholder{text-transform: uppercase; color: white;}
+
+#picbg{padding: 0.5em;}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#abtme {font-family: Horizon; color: #BA9578; text-align: center;}
+#abtme span {color: #FF6767;}
