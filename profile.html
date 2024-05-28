@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="images/staawp logo.png" class="logo">
+        </div>
+        <div class="navheader">
+            <h1>ANIMAL ABUSE</h1>
+        </div>
+    </nav>
+
+    <h1>About Me</h1>
+    <p>Full Name: <span id="profileFirstName"></span> <span id="profileLastName"></span></p>
+    <p>Email Address: <span id="profileEmail"></span> Sex: <span id="profileSex"></span></p>
+    <p>Why I support this campaign: <span id="profileSupport"></span></p>
+
+    <script>
+        document.getElementById('profileFirstName').innerHTML = localStorage.getItem('fname');
+        document.getElementById('profileLastName').innerHTML = localStorage.getItem('lname');
+        document.getElementById('profileEmail').innerHTML = localStorage.getItem('email');
+        document.getElementById('profileSex').innerHTML = localStorage.getItem('sex');
+        document.getElementById('profileSupport').innerHTML = localStorage.getItem('reason');
+    </script>
+</body>
+</html>

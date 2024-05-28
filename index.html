@@ -7,38 +7,40 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="script.js"></script>
-
         <div class="container">
             <nav>
-                <img src="images/staawp logo.png" class="logo">
-                <h1>ANIMAL ABUSE</h1>
+                <div>
+                    <img src="images/staawp logo.png" class="logo">
+                </div>
+                <div class="navheader">
+                    <h1>ANIMAL ABUSE</h1>
+                </div>
             </nav>
 
-            <h2>Lend a Paw, Stop the Claw</h2>
-            <h3>SIGN <span id="h3up">-UP</span> HERE!</h3>
+            <h2 class="motto">Lend a <span id="spanmotto">Paw</span>, Stop the <span id="spanmotto">Claw</span></h2>
+            <h3 id="legend">SIGN <span id="h3up">-UP</span> HERE!</h3>
 
-            <form id="signupform">
-                    <input type="text" id="fname" name="fname" placeholder="First Name" required onblur="inBorder()">
-                    <input type="text" id="lnam" name="lname" placeholder="Last Name" required onblur="inBorder2()""><br>
+            <form id="signupform" onsubmit="return submission();">
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
                     
-                    <label>Sex</label><br>
-                    <label class="radio-label"><input type="radio" name="sex" value="Male" required>Male</label><br>
-                    <label class="radio-label"><input type="radio" name="sex" value="Female" required> Female</label><br>
-                    <label class="radio-label"><input type="radio" name="sex" value="Prefer not to say" required> Prefer not to say</label><br><br>
+                <label>Sex</label><br>
+                <label class="radio-label"><input type="radio" id="sex" name="sex" value="Male" required>Male</label><br>
+                <label class="radio-label"><input type="radio" id="sex" name="sex" value="Female" required> Female</label><br>
+                <label class="radio-label"><input type="radio" id="sex" name="sex" value="Prefer not to say" required> Prefer not to say</label><br><br>
                     
-                    <input type="email" id="email" name="email" placeholder="Email Address" required onblur="inBorder3()"><br>
+                <input type="email" id="email" name="email" placeholder="Email Address" required><br>
                     
-                    <input type="password" id="password" name="password" placeholder="Password" required onblur="inBorder4()"><br>
+                <input type="password" id="password" name="password" placeholder="Password" required><br>
                     
-                    <input type="number" id="contactnum" name="contactnum" placeholder="Contact Number"><br>
+                <input type="number" id="contactnum" name="contactnum" placeholder="Contact Number"><br>
                 
-                   
-                    <label for="reason">Why I support this campaign?</label></br>
-                    <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+                <label for="reason">Why I support this campaign?</label></br>
+                <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
                 
-                <button type="submit" class="btn">Sign Up</button>
+                <input type="submit" value="Sign Up">
             </form>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
