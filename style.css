@@ -83,6 +83,7 @@ input[type=submit]
 #fullName{
     font-family: Coolvetica;
     font-size: larger;
+    text-align: center;
 }
 #profileFirstName{
     font-family: Coolvetica;
@@ -97,6 +98,7 @@ input[type=submit]
 #emailAddress{
     font-family: Coolvetica;
     font-size: larger;
+    text-align: center;
 }
 #profileEmail{
     font-family: Coolvetica;
@@ -106,6 +108,7 @@ input[type=submit]
 #sex{
     font-family: Coolvetica;
     font-size: larger;
+    text-align: center;
 }
 #profileSex{
     font-family: Coolvetica;
@@ -115,9 +118,13 @@ input[type=submit]
 #wistc{
     font-family: Coolvetica;
     font-size: larger;
+    text-align: center;
 }
 #profileSupport{
     font-family: Coolvetica;
     font-size: large;
     color: #FF6767
+}
+page2{
+    text-align: center;
 }
