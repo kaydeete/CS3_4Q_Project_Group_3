@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Shrikhand&display=swap');
-
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../fonts/coolveticaCon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: Horizon;
     src: url(Horizon/horizon.otf);
@@ -74,4 +79,45 @@ input[type=submit]
     border-color: #FF6767;
     font-family: Garet;
     color: #FF6767;
+}
+#fullName{
+    font-family: Coolvetica;
+    font-size: larger;
+}
+#profileFirstName{
+    font-family: Coolvetica;
+    font-size: larger;
+    color: #FF6767
+}
+#profileLastName{
+    font-family: Coolvetica;
+    font-size: larger;
+    color: #FF6767
+}
+#emailAddress{
+    font-family: Coolvetica;
+    font-size: larger;
+}
+#profileEmail{
+    font-family: Coolvetica;
+    font-size: larger;
+    color: #FF6767
+}
+#sex{
+    font-family: Coolvetica;
+    font-size: larger;
+}
+#profileSex{
+    font-family: Coolvetica;
+    font-size: larger;
+    color: #FF6767
+}
+#wistc{
+    font-family: Coolvetica;
+    font-size: larger;
+}
+#profileSupport{
+    font-family: Coolvetica;
+    font-size: large;
+    color: #FF6767
 }
